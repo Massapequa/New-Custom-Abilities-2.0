@@ -195,34 +195,58 @@ Blizzard
 
 Abilities:
 Flame Strike Targeted: Casts a Flame strike on the target. simple and straight forward. has elemental customization options.
+
 Charge: The monster charges at the player from a distance. The range can be altered on this skill.
+
 Flame Strike Aoe: Creates a circle of flame strikes around the monster and damages all players and pets within. Has range and elemental customization.
+
 Firebolt: Fires a simple fireball at the target. Also has elemental customization.
+
 Ambush: Monster vanishes and reappears at the target's location to deliver a damaging attack.
+
 Geyser: A swirling pool is created beneath the player, and after a short duration, a large geyser erupts from that spot. If the player moves out of the way in time, they can avoid the blast. This has elemental customization options.
+
 Ice Prison: The target is trapped in a block of ice for a short duration. The hue and item id of the prison can be changed.
+
 Walking Bomb: A target is marked for a short duration before an explosion erupts on top of them. Any nearby player is damaged by the blast as well.
+
 Meteor Strike: A shadow appears over a target player, and after a short duration a meteor comes crashing down and damages anyone standing in that location. If the player moves out of the way in time, they can avoid the damage.
+
 Meteor Shower: The enemy calls down a flurry of meteors at random locations nearby the target.
+
 Thunderstorm: All nearly targets are stuck by lightning.
+
 Throw Boulder: The creature throws a large boulder at a target location. Any player that is caught in the area is hit and knocked down for a short duration.
-Zap: Sends out a bolt of electricity that temporarily paralyses the target.
+
+Zap: Sends out a bolt of electricity that temporarily paralyses the target
+
 Toxic Rain: The target is doused in toxic rain for a short duration, leaving pools of acid wherever they step.
+
 Toxic Spores: Creates a circle of exploding mushrooms around the target, damaging anyone in the area and leaving pools of acid in the area that damage anyone who dares to step in it.
+
 Impale Aoe: Stalagmites erupt from the ground and pierce anyone in the area. Anyone caught in the aoe will start bleeding. The hue item ID of the stalagmites can be changed to anything you want.
 
 Custom Abilities 2.0:
 
 New Abilities:
 Flame Strike Line - Sends out cascading flames in a direct line toward the target. All enemies in the way get damaged.
+
 Barrage Of Bolts - sends a flurry of firebolts at a target. Any enemy caught in the location gets damaged.
+
 Flame Strike Cone - Creates a massive cone of fire in front of the creature that damages all nearby enemies.
+
 Grapple - The creature pulls the target towards them.
+
 Throw Explosives - The creature throws a small explosive that hits teh target and leaves a small fire behind.
+
 Throw Timed Explosives - The creature throws an explosive barrel at the target that detonates after a short time and damages all nearby targets.
+
 Heal Allies - Heals nearby allies.
+
 Flame Burst Aoe - Creates a large area of effect blast at the creature's location and leaves behind flames in the blast zone.
+
 Raging Tempest - Creates a prolonged thunderstorm in an area by the target.
+
 Blizzard - Creates a massive storm at the creature's location.
 
 Edits / Fixes:
