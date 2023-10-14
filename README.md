@@ -236,9 +236,9 @@ Click to reveal list of all of the abilities and their customizable attributes:
 
 
 
-##Custom Abilities 2.0:
+## Custom Abilities 2.0:
 
-###New Abilities:
+### New Abilities:
 
 | Ability                | Description                                                                     |
 |------------------------|---------------------------------------------------------------------------------|
@@ -280,7 +280,7 @@ Click to reveal list of all of the abilities and their customizable attributes:
 | Lightning Elemental     | Thunderstorm, Zap, Raging Tempest                    |
 | Firestorm               | Flame Burst Aoe, Meteor Shower, Barrage of Bolts      |
 	
-###Edits / Fixes:
+### Edits / Fixes:
 
 	Toxic Rain: Tamed creatures will now use this on enemy creatures and the acid pools will no longer damage players when it's used by tamed creatures.
 	Walking Bomb: Has more pronounced visual explosion and leaves flames on the gound in the area.
