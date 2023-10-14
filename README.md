@@ -63,193 +63,224 @@ If the abilities are added in the constructor, the mobs won't use the abilities 
 
 Here is a list of all of the abilities and their customizable attributes:
 
-FlameStrikeTargeted
-	Type: (Fire, Ice, Posion, Energy, Water, Steam, Necrotic, Holy) Usage: ability.Type = FlameStrikeTargeted.StrikeType.**Element goes here**
-	SetDamage: 12 - 16 by default.
+## Ability Attributes
+<details>
+<summary>
+Click to reveal list of all of the abilities and their customizable attributes:
+</summary>
+
+### FlameStrikeTargeted
+- **Type**: (Fire, Ice, Poison, Energy, Water, Steam, Necrotic, Holy)
+- **Usage**: `ability.Type = FlameStrikeTargeted.StrikeType.` *Element goes here*
+- **SetDamage**: 12 - 16 by default.
+
+### Charge
+- **SetDamage**: 12, 16 by default.
+
+### FlameStrikeAoe
+- **Type**: (Fire, Ice, Poison, Energy, Water, Steam, Necrotic, Holy)
+- **Usage**: `ability.Type = FlameStrikeAoe.StrikeType.` *Element goes here*
+- **Range**: 5 by default.
+- **SetDamage**: 12, 18 by default.
+
+### Firebolt
+- **Type**: (Fire, Ice, Poison, Energy, Water, Steam, Necrotic, Holy)
+- **Usage**: `ability.Type = Firebolt.BoltType.` *Element goes here*
+- **SetDamage**: 8, 12 by default.
+
+### Ambush
+- **SetDamage**: 12, 24 by default.
+
+### Geyser
+- **Type**: (Fire, Ice, Poison, Energy, Water, Steam, Necrotic, Holy)
+- **Usage**: `ability.Type = Geyser.GeyserType.` *Element goes here*
+- **Message**: Message that's sent when a player is caught in the blast.
+- **SetDamage**: 18, 24 by default.
+
+### IcePrison
+- **SetDamage**: 0 by default.
 
+### WalkingBomb
+- **SetDamage**: 18, 26 by default.
 
-Charge
-	SetDamage: 12, 16 by default
+### MeteorStrike
+- **Message**: Message that's sent when a player is struck.
+- **SetDamage**: 18, 24 by default.
 
+### MeteorShower
+- **SetDamage**: 14, 18 by default.
 
-FlameStrikeAoe
-	Type: (Fire, Ice, Posion, Energy, Water, Steam, Necrotic, Holy) Usage: ability.Type = FlameStrikeAoe.StrikeType.**Element goes here**
-	Range: 5 by default
-	SetDamage: 12, 18 by default
+### Thunderstorm
+- **SetDamage**: 6, 10 by default.
 
+### ThrowBoulder
+- **SetDamage**: 12, 16 by default.
 
-Firebolt
-	Type: (Fire, Ice, Posion, Energy, Water, Steam, Necrotic, Holy) Usage: ability.Type = Firebolt.BoltType.**Element goes here**
-	SetDamage: 8, 12 by default
+### Zap
+- **SetDamage**: 8, 12 by default.
 
+### ToxicRain
+- **SetDamage**: 9, 18 by default.
+- **Hue**: 64 by default.
 
-Ambush
-	SetDamage: 12, 24 by default
+### ToxicSpores
+- **SetDamage**: 21, 28 by default.
+- **Range**: 5 by default.
 
+### ImpaleAoe
+- **Range**: 5 by default.
+- **ItemID**: Change the ItemID of the item that appears on the target. (A random stalagmite by default.)
+- **SetDamage**: 12, 18 by default.
 
-Geyser
-	Type: (Fire, Ice, Posion, Energy, Water, Steam, Necrotic, Holy) Usage: ability.Type = Geyser.GeyserType.**Element goes here**
-	Message: message that's sent when player is caught in the blast
-	SetDamage: 18, 24 by default
+### FlameStrikeLine
+- **Type**: (Fire, Ice, Poison, Energy, Water, Steam, Necrotic, Holy)
+- **Usage**: `ability.Type = FlameStrikeLine.StrikeType.` *Element goes here*
+- **Range**: 5 by default.
+- **SetDamage**: 16, 20 by default.
 
+### BarrageOfBolts
+- **ItemID**: Change the ID of the projectiles.
+- **Hue**: Change the hue of the projectiles.
+- **Sound**: Fireball sound by default.
+- **SetDamage**: 12, 18 by default.
 
-IcePrison
-	SetDamage: 0 by default
+### FlameStrikeCone
+- **Type**: (Fire, Ice, Poison, Energy, Water, Steam, Necrotic, Holy)
+- **Usage**: `ability.Type = FlameStrikeCone.StrikeType.` *Element goes here*
+- **Range**: 5 by default.
+- **SetDamage**: 16, 20 by default.
 
+### Grapple
+- **Emote**: Message that appears over the creature's head as it casts the ability.
+- **Range**: 5 by default.
+- **SetDamage**: 3, 8 by default.
 
-WalkingBomb
-	SetDamage: 18, 26 by default
+### ThrowExplosives
+- **Hue**: Change the hue of the projectile.
+- **Duration**: Change the duration of the fire left on the ground after impact. (10 seconds by default.)
+- **SetDamage**: 10, 20 by default.
 
+### ThrowTimedExplosives
+- **Message**: Message that displays when a player is hit by the blast.
+- **ItemID**: ID of the projectile and item placed on the ground.
+- **Sound**: Sound when the bomb detonates.
+- **SetDamage**: 32, 40 by default.
 
-MeteorStrike
-	Message: message that's sent when player is struck
-	SetDamage: 18, 24 by default
+### HealAllies
+- *Note*: In order to make specific creatures healable allies, you must update the casting creature's IsFriend() method.
+- **Range**: 12 by default.
+- **SetHealing**: 10, 18 by default.
 
+### FlameBurstAoe
+- **Range**: 5 by default.
+- **SetDamage**: 28, 34 by default.
 
-MeteorShower
-	SetDamage: 14, 18 by default
+### RagingTempest
+- **SetDamage**: 8, 16 by default.
 
+### Blizzard
+- **SetDamage**: 12, 18 by default.
 
-Thunderstorm
-	SetDamage: 6, 10 by default
+</details>
 
 
-ThrowBoulder
-	SetDamage: 12, 16 by default
+## Abilities
 
+### Flame Strike Targeted
+- **Description**: Casts a Flame strike on the target, with elemental customization options.
 
-Zap
-	SetDamage: 8, 12 by default
+### Charge
+- **Description**: The monster charges at the player from a distance, with customizable range.
 
+### Flame Strike Aoe
+- **Description**: Creates a circle of flame strikes around the monster, damaging all players and pets within. Customizable range and elemental effects.
 
-ToxicRain
-	SetDamage: 9, 18 by default
-	Hue: 64 by defult 
+### Firebolt
+- **Description**: Fires a simple fireball at the target, with elemental customization.
 
+### Ambush
+- **Description**: Monster vanishes and reappears at the target's location to deliver a damaging attack.
 
-ToxicSpores
-	SetDamage: 21, 28 by default
-	Range: 5 by default.
+### Geyser
+- **Description**: Creates a swirling pool beneath the player, followed by a large geyser eruption. Players can avoid the blast by moving. Customizable elemental effects.
 
+### Ice Prison
+- **Description**: Traps the target in a block of ice for a short duration, with options to customize the hue and item ID.
 
-ImpaleAoe
-	Range: 5 by default
-	ItemID: change the ItemID of the item that appears on the target. a random stalagmite by default. 
-	SetDamage: 12, 18 by default.
+### Walking Bomb
+- **Description**: Marks a target before an explosion erupts, damaging nearby players. 
 
+### Meteor Strike
+- **Description**: Summons a shadow over a target player, followed by a crashing meteor. Players can avoid the damage by moving in time.
 
-FlameStrikeLine
-	Type: (Fire, Ice, Posion, Energy, Water, Steam, Necrotic, Holy) Usage: ability.Type = FlameStrikeLine.StrikeType.**Element goes here**
-	Range: 5 by default
-	SetDamage: 16, 20 by default.
+### Meteor Shower
+- **Description**: Calls down a flurry of meteors at random locations near the target.
 
+### Thunderstorm
+- **Description**: Strikes all nearby targets with lightning.
 
-BarrageOfBolts
-	ItemID: change the ID of the projectiles.
-	Hue: change the hue of the projectiles.
-	Sound: fireball sound by default. 
-	SetDamage: 12, 18 by default.
+### Throw Boulder
+- **Description**: The creature hurls a large boulder at a target location, hitting and briefly knocking down any player in the area.
 
+### Zap
+- **Description**: Sends out a bolt of electricity that temporarily paralyzes the target.
 
-FlameStrikeCone
-	Type: (Fire, Ice, Posion, Energy, Water, Steam, Necrotic, Holy) Usage: ability.Type = FlameStrikeCone.StrikeType.**Element goes here**
-	Range: 5 by default
-	SetDamage: 16, 20 by default.
+### Toxic Rain
+- **Description**: Douses the target in toxic rain, leaving pools of acid in their wake.
 
+### Toxic Spores
+- **Description**: Creates a circle of exploding mushrooms around the target, damaging anyone in the area and leaving pools of acid.
 
-Grapple
-	Emote: Message that appears over creature's head as it casts the ability.
-	Range: 5 by default.
-	SetDamage: 3, 8 by default.
+### Impale Aoe
+- **Description**: Causes stalagmites to erupt from the ground, piercing anyone in the area and inflicting bleeding. Customize the hue and item ID of the stalagmites.
 
 
-ThrowExplosives
-	Hue: change the hue of teh projectile.
-	Duration: change the duration of the fire that's left on the ground after impact. 10 seconds by default.
-	SetDamage: 10, 20 by default
 
+##Custom Abilities 2.0:
 
-ThrowTimedExplosives
-	Message: message that displays when player is hit by the blast.
-	ItemID: ID of the projectile and item that's placed on the ground.
-	Sound: when the bomb detonates. 
-	SetDamage: 32, 40 by default
+###New Abilities:
 
+| Ability                | Description                                                                     |
+|------------------------|---------------------------------------------------------------------------------|
+| Flame Strike Line      | Sends out cascading flames in a direct line toward the target. All enemies in the way get damaged. |
+| Barrage Of Bolts       | Sends a flurry of firebolts at a target. Any enemy caught in the location gets damaged. |
+| Flame Strike Cone      | Creates a massive cone of fire in front of the creature that damages all nearby enemies. |
+| Grapple                | The creature pulls the target towards them.                                  |
+| Throw Explosives       | The creature throws a small explosive that hits the target and leaves a small fire behind. |
+| Throw Timed Explosives | The creature throws an explosive barrel at the target that detonates after a short time and damages all nearby targets. |
+| Heal Allies            | Heals nearby allies.                                                           |
+| Flame Burst Aoe        | Creates a large area of effect blast at the creature's location and leaves behind flames in the blast zone. |
+| Raging Tempest         | Creates a prolonged thunderstorm in an area by the target.                   |
+| Blizzard               | Creates a massive storm at the creature's location.                          |
 
-HealAllies- *note: in order to make specific creatures healable allies, you must update the casting creature's IsFriend() method.*
-	Range: 12 by default
-	SetHealing: 10, 18 by default.
+### Mobiles and their abilities
 
-
-FlameBurstAoe
-	Range: 5 by default.
-	SetDamage: 28, 34 by default.
-
-
-RagingTempest
-	SetDamage: 8, 16 by default.
-
-
-Blizzard
-	SetDamage: 12, 18 by default.
-
-Abilities:
-Flame Strike Targeted: Casts a Flame strike on the target. simple and straight forward. has elemental customization options.
-
-Charge: The monster charges at the player from a distance. The range can be altered on this skill.
-
-Flame Strike Aoe: Creates a circle of flame strikes around the monster and damages all players and pets within. Has range and elemental customization.
-
-Firebolt: Fires a simple fireball at the target. Also has elemental customization.
-
-Ambush: Monster vanishes and reappears at the target's location to deliver a damaging attack.
-
-Geyser: A swirling pool is created beneath the player, and after a short duration, a large geyser erupts from that spot. If the player moves out of the way in time, they can avoid the blast. This has elemental customization options.
-
-Ice Prison: The target is trapped in a block of ice for a short duration. The hue and item id of the prison can be changed.
-
-Walking Bomb: A target is marked for a short duration before an explosion erupts on top of them. Any nearby player is damaged by the blast as well.
-
-Meteor Strike: A shadow appears over a target player, and after a short duration a meteor comes crashing down and damages anyone standing in that location. If the player moves out of the way in time, they can avoid the damage.
-
-Meteor Shower: The enemy calls down a flurry of meteors at random locations nearby the target.
-
-Thunderstorm: All nearly targets are stuck by lightning.
-
-Throw Boulder: The creature throws a large boulder at a target location. Any player that is caught in the area is hit and knocked down for a short duration.
-
-Zap: Sends out a bolt of electricity that temporarily paralyses the target
-
-Toxic Rain: The target is doused in toxic rain for a short duration, leaving pools of acid wherever they step.
-
-Toxic Spores: Creates a circle of exploding mushrooms around the target, damaging anyone in the area and leaving pools of acid in the area that damage anyone who dares to step in it.
-
-Impale Aoe: Stalagmites erupt from the ground and pierce anyone in the area. Anyone caught in the aoe will start bleeding. The hue item ID of the stalagmites can be changed to anything you want.
-
-Custom Abilities 2.0:
-
-New Abilities:
-Flame Strike Line - Sends out cascading flames in a direct line toward the target. All enemies in the way get damaged.
-
-Barrage Of Bolts - sends a flurry of firebolts at a target. Any enemy caught in the location gets damaged.
-
-Flame Strike Cone - Creates a massive cone of fire in front of the creature that damages all nearby enemies.
-
-Grapple - The creature pulls the target towards them.
-
-Throw Explosives - The creature throws a small explosive that hits teh target and leaves a small fire behind.
-
-Throw Timed Explosives - The creature throws an explosive barrel at the target that detonates after a short time and damages all nearby targets.
-
-Heal Allies - Heals nearby allies.
-
-Flame Burst Aoe - Creates a large area of effect blast at the creature's location and leaves behind flames in the blast zone.
-
-Raging Tempest - Creates a prolonged thunderstorm in an area by the target.
-
-Blizzard - Creates a massive storm at the creature's location.
-
-Edits / Fixes:
+| Mobile                  | Abilities                                              |
+|-------------------------|-------------------------------------------------------|
+| Rebel Paladin           | Charge, Flame Strike Aoe (holy)                       |
+| Rebel Archer            | Barrage of Bolts (arrow ItemID)                       |
+| Rebel Priest            | Flame Strike Targeted (holy), Firebolt (holy), Heal Allies |
+| Rebel Alchemist         | Throw Timed Explosives (Explosion potion ItemID), Flame Burst Aoe |
+| Brigand Pillager        | Throw Explosives, Throw Timed Explosives              |
+| Brigand Cutthroat       | Ambush, Barrage of Bolts                               |
+| Brigand Occultist       | Walking Bomb, Toxic Rain, Heal Allies                  |
+| Ice Imp                 | Firebolt (ice), Ice Prison                             |
+| Fire Imp                | Meteor Strike, Firebolt                                |
+| Shadow Imp              | Firebolt (necrotic), Toxic Rain                       |
+| Swamp Hag               | Toxic Spores, Flame Strike Aoe (poison), Flame Strike Targeted (poison) |
+| Sea Hag                 | Geyser, Flame Strike Aoe (water), Barrage of Bolts (water hued) |
+| Winter Hag              | Blizzard, Flame Strike Aoe (ice), Geyser (steam)       |
+| Reef Drake              | Flame Strike Line (water)                             |
+| Reef Dragon             | Flame Strike Cone (water)                             |
+| Shadow Drake            | Flame Strike Line (necrotic)                         |
+| Shadow Dragon           | Flame Strike Cone (necrotic)                         |
+| Blighted Vine           | Grapple, Geyser (poison), Firebolt (poison)           |
+| Mountain Troll          | Throw boulder, Grapple                                 |
+| Gem Elemental           | Throw Boulder, Impale Aoe, Barrage of Bolts (ore ItemID) |
+| Lightning Elemental     | Thunderstorm, Zap, Raging Tempest                    |
+| Firestorm               | Flame Burst Aoe, Meteor Shower, Barrage of Bolts      |
+	
+###Edits / Fixes:
 
 	Toxic Rain: Tamed creatures will now use this on enemy creatures and the acid pools will no longer damage players when it's used by tamed creatures.
 	Walking Bomb: Has more pronounced visual explosion and leaves flames on the gound in the area.
@@ -259,36 +290,5 @@ Edits / Fixes:
 	
 
 
-Mobiles and their abilities:
 
-	Rebel Paladin: Charge, Flame Strike Aoe(holy)
-	Rebel Archer: Barrage of Bolts(arrrow ItemID)
-	Rebel Priest: Flame Strike Targeted(holy), Firebolt(holy), Heal Allies
-	Rebel Alchemist: Throw Timed Explosives (Explosion potion ItemID), Flame Burst Aoe
-
-	Brigand Pillager: Throw Explosives, Throw Timed Explosives
-	Brigand Cutthroat: Ambush, Barrage of Bolts
-	Brigand Occultist: Walking Bomb, Toxic Rain, Heal Allies
-
-	Ice Imp: Firebolt(ice), Ice Prison
-	Fire Imp: Meteor Strike, Firebolt
-	Shadow Imp: Firebolt(necrotic), Toxic Rain
-
-	Swamp Hag:Toxic Spores, Flame Strike Aoe(poison), Flame Strike Targeted(poison)
-	Sea Hag: Geyser, FlameStrike Aoe(water), Barrage of Bolts(water hued)
-	Winter Hag: Blizzard, Flame Strike Aoe(ice), Geyser(steam)
-
-	Reef Drake: Flame Strike Line(water)
-	Reef Dragon: Flame Strike Cone(water)
-	Shadow Drake: Flame Strike Line(necrotic)
-	Shadow Dragon: Flame Strike Cone(necrotic)
-
-	Blighted Vine: Grapple, Geyser(poison), Firebolt(poison)
-	Mountain Troll: Throw boulder, Grapple
-
-	Gem Elemental: Throw Boulder, Impale Aoe, Barrage of Bolts(ore ItemID)
-	Lightning Elemental: Thunderstorm, Zap, Raging Tempest
-	Firestorm: Flame Burst Aoe, Meteor Shower, Barrage of Bolts
-
-	
 
